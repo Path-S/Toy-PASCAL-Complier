@@ -1,0 +1,27 @@
+//测试多参数
+program test6;
+var 
+	ans : integer;
+	tmp : integer;
+function gcd(a, b : integer) : integer;
+var
+	c : integer;
+begin
+	if b = 0 then begin
+		gcd := a;
+	end
+	else begin
+		c := a % b;
+		gcd := gcd(b , c);
+	end
+	;
+end
+;
+
+begin
+	ans := gcd(36 , 9);
+	tmp := gcd(6, 3);
+	ans := tmp * ans;
+	writeln(ans);
+end
+.

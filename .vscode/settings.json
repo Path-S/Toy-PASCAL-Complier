@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "symtab.h": "c",
+        "token.h": "c"
+    }
+}
